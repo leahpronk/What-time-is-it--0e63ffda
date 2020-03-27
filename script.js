@@ -1,6 +1,14 @@
+function tijd() {
+  var vandaag = new Date();
+  var date = vandaag.getHours() + ":" + (vandaag.getMinutes() + 1) + ":" + vandaag.getSeconds();
+  document.getElementById("demo").innerHTML = date;
+}
+
+
+
 const pi = 3.14;
 
-function diaMeter() {
+function diameter() {
   let diam = document.getElementById('number').value;
   let answer = diam * pi;
 
@@ -18,5 +26,5 @@ function oppervlakte() {
 
 function bereken() {
   oppervlakte();
-  diaMeter();
+  diameter();
 }
